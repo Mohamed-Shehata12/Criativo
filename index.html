@@ -4,7 +4,6 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> -->
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
@@ -27,12 +26,12 @@
           <h4>creative agency</h4>
         </div><!-- ./head-left-->
         <div class="head-middel">
-          <a href="#">home</a>
-          <a href="#">about us</a>
-          <a href="#">services</a>
-          <a href="#">portfolio</a>
-          <a href="#">pages</a>
-          <a href="#">contac us</a>
+          <a href="#home">home</a>
+          <a href="#about">about us</a>
+          <a href="#services">services</a>
+          <a href="#portfolio">portfolio</a>
+          <a href="#pages">pages</a>
+          <a href="#contact">contact us</a>
         </div><!-- ./head-middle-->
         <div class="head-right">
           <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
@@ -41,7 +40,7 @@
     </div><!-- ./container-->
   </header>
 
-  <section class="home">
+  <section class="home" id="home">
     <div class="home-left">
       <h2>creative agency</h2>
       <h1>we are <span>creative</span> <br> design agency</h1>
@@ -68,7 +67,7 @@
     </div><!-- ./home-right-->
   </section>
 
-  <section class="services">
+  <section class="services" id="services">
     <div class="services-left">
       <h2>our services</h2>
       <h1>what we<span> do</span><span class="dot">.</span></h1>
@@ -109,7 +108,7 @@
     </div><!-- ./services-right-->
   </section>
 
-  <section class="about">
+  <section class="about" id="about">
     <div class="about-left">
       <img src="images/Untitled-1.png" alt="">
     </div><!-- ./about-left-->
@@ -246,7 +245,7 @@
 
   </section>
 
-  <section class="landing">
+  <section class="landing" id="pages">
     <div class="landing-top">
       <h2>our team</h2>
       <h1>meet expert <span>team</span><span class="dot">.</span></h1>
@@ -257,10 +256,26 @@
     <div class="landing-bottom">
       <div class="landing-items">
         <div class="landing-item-img">
-          <img src="images/T1.png" width="50px" alt="">
+          <img src="images/mohamed.png" width="50px" alt="">
         </div><!-- ./landing-item-img-->
         <div class="landing-item-text">
-          <h2>mike washoski</h2>
+          <h2>mohamed shehata</h2>
+          <h4>Software engineer</h4>
+          <p>Lorem ipsum dolor sit amet,<br> consectetur adipiscing.</p>
+          <div class="landing-icon">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          </div><!-- ./landing-icon-->
+        </div><!-- ./landing-item-text-->
+      </div><!-- ./landing-items-->
+
+      <div class="landing-items">
+        <div class="landing-item-img">
+          <img src="images/rawan.png" width="50px" alt="">
+        </div><!-- ./landing-item-img-->
+        <div class="landing-item-text">
+          <h2>rawan esaam</h2>
           <h4>designer</h4>
           <p>Lorem ipsum dolor sit amet,<br> consectetur adipiscing.</p>
           <div class="landing-icon">
@@ -271,57 +286,11 @@
         </div><!-- ./landing-item-text-->
       </div><!-- ./landing-items-->
 
-      <div class="landing-items">
-        <div class="landing-item-img">
-          <img src="images/T2.png" width="50px" alt="">
-        </div><!-- ./landing-item-img-->
-        <div class="landing-item-text">
-          <h2>hanna smith</h2>
-          <h4>designer</h4>
-          <p>Lorem ipsum dolor sit amet,<br> consectetur adipiscing.</p>
-          <div class="landing-icon">
-            <i class="fa-brands fa-facebook"></i>
-            <i class="fa-brands fa-twitter"></i>
-            <i class="fa-brands fa-instagram"></i>
-          </div><!-- ./landing-icon-->
-        </div><!-- ./landing-item-text-->
-      </div><!-- ./landing-items-->
-
-      <div class="landing-items">
-        <div class="landing-item-img">
-          <img src="images/T3.png" width="50px" alt="">
-        </div><!-- ./landing-item-img-->
-        <div class="landing-item-text">
-          <h2>lexi black</h2>
-          <h4>designer</h4>
-          <p>Lorem ipsum dolor sit amet,<br> consectetur adipiscing.</p>
-          <div class="landing-icon">
-            <i class="fa-brands fa-facebook"></i>
-            <i class="fa-brands fa-twitter"></i>
-            <i class="fa-brands fa-instagram"></i>
-          </div><!-- ./landing-icon-->
-        </div><!-- ./landing-item-text-->
-      </div><!-- ./landing-items-->
-
-      <div class="landing-items">
-        <div class="landing-item-img">
-          <img src="images/T4.png" width="50px" alt="">
-        </div><!-- ./landing-item-img-->
-        <div class="landing-item-text">
-          <h2>kevin widagdo</h2>
-          <h4>designer</h4>
-          <p>Lorem ipsum dolor sit amet,<br> consectetur adipiscing.</p>
-          <div class="landing-icon">
-            <i class="fa-brands fa-facebook"></i>
-            <i class="fa-brands fa-twitter"></i>
-            <i class="fa-brands fa-instagram"></i>
-          </div><!-- ./landing-icon-->
-        </div><!-- ./landing-item-text-->
-      </div><!-- ./landing-items-->
+      
     </div><!-- ./landing-bottom-->
   </section>
 
-  <section class="portfolio">
+  <section class="portfolio" id="portfolio">
     <div class="container">
       <div class=" portfolio-top">
         <h2>portfolio</h2>
@@ -393,7 +362,7 @@
           <div class="blog-bot-parent">
             <div class="blog-bot-child">
               <i class="fa-regular fa-calendar-days"></i>
-              <h4> june 03,2021</h4>
+              <h4> Dec 03,2024</h4>
             </div><!-- ./blog-bot-child-->
             <div class="blog-bot-child">
               <i class="fa-regular fa-rectangle-list"></i>
@@ -401,6 +370,7 @@
             </div><!-- ./blog-bot-child-->
           </div><!-- ./blog-bot-parent-->
         </div><!-- ./blog-bott-item-->
+
         <div class="blog-bott-item">
           <img src="images/N2.jpg" alt="">
           <h2>ut sagittis consectetur <br> ante t tincidunt</h2>
@@ -410,7 +380,7 @@
           <div class="blog-bot-parent">
             <div class="blog-bot-child">
               <i class="fa-regular fa-calendar-days"></i>
-              <h4> june 03,2021</h4>
+              <h4> Dec 03,2024</h4>
             </div><!-- ./blog-bot-child-->
             <div class="blog-bot-child">
               <i class="fa-regular fa-rectangle-list"></i>
@@ -418,6 +388,7 @@
             </div><!-- ./blog-bot-child-->
           </div><!-- ./blog-bot-parent-->
         </div><!-- ./blog-bott-item-->
+
         <div class="blog-bott-item">
           <img src="images/N3.jpg" alt="">
           <h2>in hacHhabitasse platea <br> dictumst</h2>
@@ -427,7 +398,7 @@
           <div class="blog-bot-parent">
             <div class="blog-bot-child">
               <i class="fa-regular fa-calendar-days"></i>
-              <h4> june 03,2021</h4>
+              <h4> Dec 03,2024</h4>
             </div><!-- ./blog-bot-child-->
             <div class="blog-bot-child">
               <i class="fa-regular fa-rectangle-list"></i>
@@ -435,12 +406,14 @@
             </div><!-- ./blog-bot-child-->
           </div><!-- ./blog-bot-parent-->
         </div><!-- ./blog-bott-item-->
+
       </div><!-- ./blog-bottom-->
     </div><!-- ./container-->
   </section>
 
-  <section class="login">
+  <section class="login" id="contact">
     <div class="container">
+
       <div class="login-items">
         <div class="login-left">
           <h3>your name</h3>
@@ -466,21 +439,21 @@
             <i class="fa-solid fa-location-dot"></i>
             <div class="login-text">
               <h3>office address</h3>
-              <p>99th, Arround St. Pku City, 28292, Riau Indonesia</p>
+              <p>Tanta , Egypt</p>
             </div><!-- ./login-text-->
           </div><!-- ./login-right-bottom-->
           <div class="login-right-bottom">
             <i class="fa-solid fa-phone"></i>
             <div class="login-text">
               <h3>call us</h3>
-              <p>+(827) 123 - 456 - 7891</p>
+              <p>+20 110 2623 867</p>
             </div><!-- ./login-text-->
           </div><!-- ./login-right-bottom-->
           <div class="login-right-bottom">
             <i class="fa-regular fa-envelope-open"></i></i>
             <div class="login-text">
               <h3>mail us</h3>
-              <p>info@evaniayogastudio.com</p>
+              <p>shehata@gmail.com</p>
             </div><!-- ./login-text-->
           </div><!-- ./login-right-bottom-->
         </div><!-- ./login-right-->
@@ -496,21 +469,22 @@
         <h4>creative agency</h4>
       </div><!-- ./footer-top-->
       <div class="footer-middel">
-        <a href="#">home</a>
-        <a href="#">about us</a>
-        <a href="#">services</a>
-        <a href="#">portfolio</a>
-        <a href="#">pages</a>
-        <a href="#">contac us</a>
+        <a href="#home">home</a>
+          <a href="#about">about us</a>
+          <a href="#services">services</a>
+          <a href="#portfolio">portfolio</a>
+          <a href="#pages">pages</a>
+          <a href="#contact">contact us</a>
       </div><!-- ./footer-middle-->
       <div class="footer-last">
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit <br> tellus, luctus nec ullamcorper mattis.
         </p>
       </div><!-- ./footer-last-->
       <div class="footer-icons">
-        <i class="fa-brands fa-facebook"></i>
-        <i class="fa-brands fa-twitter"></i>
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
         <i class="fa-brands fa-instagram"></i>
+        <a href="#"></a>      
       </div><!-- ./footer-icons-->
     </div><!-- ./container-->
   </footer>
@@ -518,6 +492,8 @@
   <section class="copy">
     <h2>copyright &copy; criative agency.all right reserved by rometheme.</h2>
   </section>
+
+  <script src="main.js"></script>
 
 </body>
 

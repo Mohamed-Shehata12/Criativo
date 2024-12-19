@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 :root{
   --background-header:#151515;
@@ -35,26 +36,13 @@ header{
 .header{
   display: flex;
   align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  background-color: var(--background-header);
 }
-
-/* mobil*/
-
-
-
-
-
-
-
-
-
-
-/* medium screen */
-
-/* large screen */
-@media (min-width:1200px){
-}
-
-
 
 .header .head-left{
   margin-left: 70px;
@@ -676,7 +664,6 @@ header{
   background-size: cover;
   background-position: center;
   text-align: center;
-  height:700px;
   display: flex;
   flex-wrap: wrap;
   padding-left: 120px;
@@ -684,54 +671,40 @@ header{
 .landing-bottom .landing-items{
   background-color: var(--background-header);
   width: 500px;
-  height: 280px;
   display: flex;
-  position: relative;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
   margin: 0 0 20px 20px;
 }
-.landing-items .landing-item-img{
-  position: absolute;
-  top: -16px;
-}
-
 .landing-bottom .landing-items img{
-  width: 250px;
-  margin:0 5px;
-  filter: grayscale();  
+  width: 150px;
 }
 .landing-item-text{
-  margin-right: 20px;
   margin-top: 15px;
-  margin-left: 55%;
 }
+
 .landing-item-text h2{
+  margin: 20px 0;
   font-size: 27px;
   color: var(--color-a);
   text-transform: capitalize;
-  margin-bottom: 20px;
-  text-align: left;
-
 }
 .landing-item-text h4{
-  text-align: left;
   color: var(--color-search);
   text-transform: capitalize;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   font-size: 20px;
 }
 .landing-item-text p{
   font-size: 15px;
   color: var(--color-a);
-  margin-bottom: 48px;
-  text-align: left;
-}
-.landing-item-text .landing-icon{
-  text-align: left;
-  padding-top: 20px;
+  margin-bottom: 20px;
 }
 .landing-icon i{
   color: var(--color-search);
-  margin: 10px;
+  margin: 10px 10px 30px;
+  font-size: 30px;
 
 }
 /* End Landing */
@@ -1051,7 +1024,6 @@ footer{
   font-weight: 100;
 }
 /* End Copy */
-
 
 @media (max-width:767px){
   header{
@@ -1661,8 +1633,6 @@ footer{
   font-weight: 100;
 }
 }
-
-
 
 @media screen and (min-width:768px) and (max-width:1023px){
   body{
@@ -3253,3 +3223,16 @@ footer{
     font-weight: 100;
   }
 }  
+
+  /* تنسيق الحركة لجميع الصور */
+  img {
+    opacity: 0; /* بداية الصور ستكون غير مرئية */
+    transform: translateY(100px); /* الصور تبدأ من الأسفل */
+    transition: transform 1s ease-out, opacity 1s ease-out; /* إضافة التأثيرات */
+}
+
+  /* عندما نضيف الكلاس active للصور */
+img.active {
+    opacity: 1; /* جعل الصور مرئية */
+    transform: translateY(0); /* تحريك الصور إلى مكانها الأصلي */
+}
